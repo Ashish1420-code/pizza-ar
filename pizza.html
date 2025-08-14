@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3D Pizza Viewer</title>
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <style>
+    body {
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f5f5f5;
+    }
+    model-viewer {
+      width: 80%;
+      height: 80%;
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    }
+  </style>
+</head>
+<body>
+
+  <model-viewer
+    src="Pizza.glb"
+    ios-src="Pizza.usdz"
+    alt="3D Pizza"
+    auto-rotate
+    camera-controls
+    ar
+    shadow-intensity="1">
+  </model-viewer>
+
+</body>
+</html>
